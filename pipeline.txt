@@ -43,7 +43,7 @@ pipeline {
                   withDockerRegistry(credentialsId: 'docker', toolName: 'docker'){   
                       sh "docker build -t robot-gallery ."
                       sh "docker tag robot-gallery your-dockerhub-username/robot-gallery:tagname "
-                      sh "docker push your-dockerhub-usernmae/robot-gallery:tagname "
+                      sh "docker push your-dockerhub-username/robot-gallery:tagname "
                      }
                  }
              }
