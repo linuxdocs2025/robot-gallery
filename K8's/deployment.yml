@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: robot-gallery
-          image: your-dockerhub-username/robot-gallery-node:latest  # replace this
+          image: your-dockerhub-username/your-dockerhub-repo-name:latest  # replace this
           ports:
             - containerPort: 3000
           livenessProbe:
@@ -31,3 +31,4 @@ spec:
               port: 3000
             initialDelaySeconds: 5
             periodSeconds: 10
+
